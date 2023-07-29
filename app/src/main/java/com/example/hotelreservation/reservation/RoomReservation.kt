@@ -12,6 +12,7 @@ class RoomReservation : ReservationList() {
             val roomNumber = readLine()?.toInt()
 
             if (roomNumber in 100..999) {
+                println("룸배정되었습니다")
             } else {
                 println("옳바르지 않은 방번호 입니다. 방번호는 100~999 영역 이내입니다. ")
                 boolean = false

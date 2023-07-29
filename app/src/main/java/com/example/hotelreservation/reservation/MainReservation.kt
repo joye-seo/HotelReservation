@@ -8,7 +8,7 @@ fun main() {
 }
 
 class MainReservation {
-    val number = readLine()!!.toInt()
+    private val number = readLine()!!.toInt()
     fun reservation() {
         when (number) {
             1 -> {
