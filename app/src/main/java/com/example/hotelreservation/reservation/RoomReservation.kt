@@ -1,5 +1,12 @@
 package com.example.hotelreservation.reservation
 
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
+val localTime = LocalDateTime.now()
+val formatter = DateTimeFormatter.ofPattern("a HH시 mm분")
+val chargeTimeFormatter = DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 HH시 mm분 ss초")
+val time = localTime.format(formatter)
 class RoomReservation : ReservationList() {
     var boolean = true
     fun reservation() {
